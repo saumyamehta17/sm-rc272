@@ -1,5 +1,8 @@
+Railscast sm-rc272 and Railscast sm-rc273
+==========================================
+
 Railscast sm-rc272
-===================
+----------------------------------
 Redcarpet
 ```
 It is used to to interpret markdown(plain text which can be converted to html).
@@ -41,8 +44,31 @@ Now syntax-highlighter
 ```
 gem 'pygments' - python syntax highlighter - try 'http://pygments.org/'
 gem 'nokogiri' - to parse code online
+```
+
+Railscast sm-rc273
+----------------------------------
+geocoder
+```
+To convert place name into cordinates or nearby places or show place in google map etc can be done very easily with it.
+```
+gem file
+```
+gem 'geocoder'
+```
+scaffold
+```
+rails g scaffold location address latitude:float longitude:float
+http://localhost:3000/locations
+```
+need to specify according to which field geocode should works and when should it should show details
+```
+see models/location.rb
+see views/locations/index.html.erb
+nearbys method show all near by places with 20 miles bydefault, you can change it miles
 
 ```
+
 Rails Server
 ```
 rails s

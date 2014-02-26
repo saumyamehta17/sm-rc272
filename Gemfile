@@ -31,9 +31,12 @@ gem 'thin'
 gem 'simple_form'
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"
+#specific sm-rc272
 gem 'redcarpet', '1.17.2'
 gem 'pygments.rb'
 gem 'nokogiri'
+#specific sm-rc273
+gem "geocoder"
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
