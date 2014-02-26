@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @snippet.name %>
+</p>
+
+<p>
+  <strong>Source code:</strong>
+  <%= markdown(@snippet.source_code,@snippet.language ) %>
+</p>
+
+<%= link_to 'Edit', edit_snippet_path(@snippet) %> |
+<%= link_to 'Back', snippets_path %>
