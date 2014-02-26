@@ -41,7 +41,7 @@ Now syntax-highlighter
 ```
 gem 'pygments' - python syntax highlighter - try 'http://pygments.org/'
 gem 'nokogiri' - to parse code online
-gem 'albino'   -
+
 ```
 Rails Server
 ```
