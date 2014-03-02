@@ -5,6 +5,7 @@ class SnippetsController < ApplicationController
   # GET /snippets.json
   def index
     @snippets = Snippet.all
+    #debugger.pry
   end
 
   # GET /snippets/1

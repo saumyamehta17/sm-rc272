@@ -69,6 +69,65 @@ nearbys method show all near by places with 20 miles bydefault, you can change i
 
 ```
 
+Railscast sm-rc280
+------------------------------
+pry
+```
+irb alternative
+```
+
+installation
+```
+gem install pry pry-doc
+if want to install it globally for all app
+switch to global gem set -- rvm  gemset use global
+gem install pry pry-doc
+```
+how to use pry
+```
+pry -r ./config/environment -- it will load default rails environment
+```
+or simply edit gem file
+```
+gem 'pry-rails'
+Note: but it will make pry as ur default rails console , if dont want then adopt above solution
+```
+pry
+```
+syntax highlighting
+u can use help to see more options like cd , ls
+```
+usage
+```
+
+1. cd c cd ccdcd-- can be used to go to any level of scope
+   cd Article
+   cd name
+   exit or cd to move to higher level
+2. ls -- used to list variables and methods
+   ls --help or ls -h  -- it will show all options
+3. it also shows directory structure
+   for eg .ls -- will show all folders and simiplarly we can move further
+   for eg .ls app
+4. It also show whole file
+   .cat Gemfile
+5. Also used for debugging, edit method-name will open editor on command prompt
+   for eg  edit sample
+   for debugging purpose, write
+     binding.pry
+   To continue after debugging
+     exit-all
+   Now open method,  by simply writing
+     sample
+   To show method, show-method sample
+6 debugginh controller and view
+    for eg
+    write binding.pry in index action
+
+
+
+
+
 Rails Server
 ```
 rails s

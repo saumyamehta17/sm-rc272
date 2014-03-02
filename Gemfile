@@ -35,8 +35,11 @@ gem "twitter-bootstrap-rails"
 gem 'redcarpet', '1.17.2'
 gem 'pygments.rb'
 gem 'nokogiri'
+
 #specific sm-rc273
 gem "geocoder"
+
+gem 'pry-rails'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
